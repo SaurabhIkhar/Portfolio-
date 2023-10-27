@@ -1,0 +1,384 @@
+body {
+    margin: 0px;
+    font-family: sans-serif;
+    font-size: 30px;
+    background-image: radial-gradient( circle 400px at 6.8% 8.3%,  rgba(255,244,169,1) 0%, rgba(255,244,234,1) 100.2% );
+}
+
+/* Body Header */
+
+#body-header {
+    height: 65vh;
+    opacity: 0.8;
+    background-image: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000000020_1549743985_macbook_mouse.jpg) ;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 1.2rem;
+}
+
+/* Horizontal Lists */
+
+.horizontal-list {
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+    
+}
+
+.horizontal-list li {
+    display: inline-block;
+    margin: 0px 8px 8px 0px;
+    font-weight: 100;
+    font-size: 20px;
+    padding: 12px;
+    flex-start: 50px;
+}
+
+
+.horizontal-list li a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-menu li a {
+    transition: color 0.5s, border-bottom 4s;
+}
+
+.nav-menu li a:hover {
+    color: lightgrey;
+    border-bottom: 1px solid black;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Name and Social Icons*/
+
+#name-social-container {
+    margin-top: 12vh;
+}
+
+#my-name {
+    font-size: 4rem;
+    letter-spacing: 0.1rem;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.social-icons li {
+    border-radius: 40%;
+    margin-top: 20px;
+
+}
+
+.social-icons li:hover {
+    box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
+}
+
+.social-icons li a i:hover {
+    box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
+    border-radius: 40%;
+}
+
+.social-icons li a i {
+    width: 1rem;
+    padding: 6px;
+    font-size: 20px;
+}
+
+/* -------about section------------------------------------------------------------------------- */
+#about{
+    margin-top: -100px;
+    position: relative;
+
+}
+
+.profilepic img{
+    vertical-align: top;
+    border-radius: 60%;
+    width: 250px;
+    height: 250px;
+    border: 4px darkgray solid;
+    box-shadow: 0px 0px 8px 9px lightgray;
+}
+
+#about p{
+    width:75%;
+    margin:auto;
+    margin-top:75px;
+    text-align: justify;
+    font-size: 24px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    word-spacing: 0.1rem;
+}
+
+/* --------section heading---------------------------------------------------------- */
+section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-heading{
+    width: auto;
+    padding: 20px 10px 10px;
+    margin: 10px auto;
+    font-weight: 300;
+}
+
+.section-heading span{
+    font-size: 40px;
+    color:#2857a4;
+    display: inline-block;
+    padding-top: 10px;
+    margin-right: 0.5 rem;
+}
+
+.mb75px{
+    margin-bottom: 75px;
+
+}
+
+/* ---------------skills section------------------------------------------------------------------- */
+#skills{
+    background: linear-gradient(to top left, rgb(224, 224, 235),rgb(231, 223, 233));
+    margin-top: 70px;
+    height: 70vh;
+}
+
+.skills-display{
+    width:70vw;
+    height: 35vh;
+    margin: 5px auto; 
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items:center;
+    
+  
+}
+
+
+
+.skill-progress{
+    width: 8rem ;
+    height: 2rem;
+    border-radius: 0.9rem;
+    background-color: rgba(43, 157, 219, 0.96);
+    box-shadow: 0rem 0rem 5px 3px white;
+    padding-bottom: 4px;
+    margin-bottom: 30px;
+    margin-left: 5px;
+}
+
+.skill-name{
+    font-size: 20px;
+    margin-left: 15px;
+   color: aliceblue;
+    vertical-align: middle;
+    
+}
+
+/* #c{
+    width: 5rem ;
+    height: 2rem;
+    border-radius: 0.9rem 0rem 0rem 0.9rem;
+    background-color: blue;
+    padding-bottom: 4px;
+} */
+
+/* ----------Contact section---------------------------------------------------------------------- */
+
+#contact{
+    background: linear-gradient(to top left, rgb(115, 115, 235),rgb(235, 120, 206));
+    
+    margin-top: 50px;
+    height: 65%;
+    
+}
+.con-heading{
+    width: auto;
+    padding: 20px 10px 10px;
+    margin: 10px auto;
+    font-weight: 300;
+}
+
+.con-heading span{
+    font-size: 40px;
+    color:white;
+    display: inline-block;
+    padding-top: 10px;
+    margin-right: 0.5 rem;
+}
+
+#con-forms{
+   
+    width:85vw;
+    height:40vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+#con-forms-div{
+    align-content: center;
+    height:50vh;
+}
+
+.address{
+    color:azure;
+    font-size: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 20px;
+}
+
+#con-forms div form input{
+    width:20rem;
+    height:25px;
+    border-style: hidden;
+    border-bottom: 3px solid white;
+    background-color: transparent;
+    margin-bottom: 40px;
+    
+    
+}
+
+#con-forms div form textarea{
+    width:20rem;
+    height:25px;
+    border-style: hidden;
+    border-bottom: 3px solid white;
+    background-color: transparent;
+    
+}
+
+#con-forms div form button{
+    background-color: transparent;
+    margin-top: 40px;
+    margin-left: 50px;
+    height: 30px;
+    width: 9rem;
+    border: 2px solid white;
+    
+    
+}
+
+/* ---------------------------------------Experience & Education  section------------------------------ */
+#experience{
+    height: auto;
+}
+.timeline{
+    position: relative;
+    width: 75%;
+    
+}
+.timeline-box{
+    position: relative;
+    margin: 5px;
+    width: 40%;
+    left: 5%;
+    min-height: 150px;
+    padding: 0px;
+}
+
+.timeline-box:nth-child(2n){
+    left: 53%;
+}
+@media screen and (max-width:600px)
+{  
+     .timeline-box:nth-child(2n+1){
+    left:53%;
+}
+   .timeline-divider{
+    width: 0;
+    height: 68%;
+    border:1px dashed lightslategray;
+    position:absolute;
+    top:10%;
+    
+}
+
+}
+
+.timeline-box-title{
+    font-size: 10px;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height:80px ;
+}
+.timeline-box-paragraph{
+    font-size: 16px;
+    color: #2857a4;
+}
+#title-name h1{
+       font-size: 22px;
+       text-align: right;
+       margin: 0px;
+       margin-bottom: 5px;
+       color:#2857a4;
+}
+#title-name p{
+    font-size: 14px;
+    text-align:right;
+    margin: 0px;
+    margin-bottom: 3px;
+
+}
+
+#education{
+    background: linear-gradient(to top left, rgb(224, 224, 235),rgb(231, 223, 233));
+    margin-top: 50px;
+}
+
+.timeline-divider{
+    width: 0;
+    height: 68%;
+    border:1px dashed lightslategray;
+    position:absolute;
+    top:10%;
+    left:50%;
+}
+
+.timeline-traveller{
+    top:1%;
+    transform: rotate(90deg); 
+    position: sticky;  
+}
+
+/* ------------------------------------Projects--------------------------------------------------- */
+
+#portfolio{
+    margin-bottom: 150px;
+}
+.projects-container{
+    width:80%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+.projects{
+    min-width:24%  ;
+    min-height:44% ;
+    border-radius: 40%;
+    box-shadow: 2px 2px 8px 9px lightgray;
+    align-content: space-around;
+}
+
+.projects img{
+    width:100 px ;
+    height:300 px ;
+    border-radius: 40%;
+    align-content: space-around;
+}
